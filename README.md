@@ -1,4 +1,4 @@
-Git - Simple Git with PHP
+Simple wrapper for Git
 =========================
 
 [![Packagist](https://img.shields.io/packagist/v/buuum/Git.svg?maxAge=2592000)](https://packagist.org/packages/buuum/git)
