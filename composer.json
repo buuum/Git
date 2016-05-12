@@ -1,0 +1,27 @@
+{
+  "name": "buuum/git",
+  "type": "library",
+  "description": "Simple and fast Git php",
+  "homepage": "https://github.com/buuum/Git",
+  "keywords": [
+    "git"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alfons Martinez",
+      "email": "alfonsmartinezparra@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Buuum\\": "src/Git"
+    }
+  },
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  }
+}
