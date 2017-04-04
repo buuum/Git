@@ -98,7 +98,8 @@ class Git
      */
     protected function execute($command)
     {
-        $command = 'LC_ALL=es_ES.UTF-8 git -C ' . escapeshellarg($this->repository_path) . ' ' . $command;
+        $prefix = System::getOS() != System::OS_WIN ? 'LC_ALL=es_ES.UTF-8 ' : '';
+        $command = $prefix . 'git -C ' . escapeshellarg($this->repository_path) . ' ' . $command;
         exec($command, $output, $returnValue);
         if ($returnValue !== 0) {
             throw new \RuntimeException(implode("\r\n", $output));
